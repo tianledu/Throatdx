@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1152</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>1022</width>
+      <height>670</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame_2{
+	border-radius:22px;
+	background-color: rgb(16, 18, 31);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>330</y>
+       <width>120</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1021</width>
+       <height>671</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,14">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="styleSheet">
+         <string notr="true">#frame{
+	border-top-left-radius:22px;
+	border-top-right-radius:22px;
+	background-color:rgb(38,45,75);
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>-20</y>
+           <width>81</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../icons/logo.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>10</y>
+           <width>266</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:12px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>一键诊断</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/一键诊断.png</normaloff>../icons/一键诊断.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:12px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>查看历史</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/查看历史.png</normaloff>../icons/查看历史.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:12px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>查看诊断报告</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/查看报告.png</normaloff>../icons/查看报告.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>850</x>
+           <y>-1</y>
+           <width>171</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:15px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>返回登录</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/返回主页.png</normaloff>../icons/返回主页.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:15px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>退出</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/按钮_关闭.png</normaloff>../icons/按钮_关闭.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,5,2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_3">
+          <property name="styleSheet">
+           <string notr="true">#frame_3{
+	border-bottom-left-radius:22px;
+	
+	background-color:rgb(16,18,31);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="frame_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>70</y>
+             <width>131</width>
+             <height>321</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(16,18,31);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QPushButton" name="pushButton_5">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:16px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+              </property>
+              <property name="text">
+               <string>加载模型</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../icons/加载模型.png</normaloff>../icons/加载模型.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_6">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:16px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+              </property>
+              <property name="text">
+               <string>选择影像</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../icons/选择影像.png</normaloff>../icons/选择影像.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_9">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:16px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+              </property>
+              <property name="text">
+               <string>开始诊断</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../icons/开始推理.png</normaloff>../icons/开始推理.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_11">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:16px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+              </property>
+              <property name="text">
+               <string>诊断报告</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../icons/诊断报告.png</normaloff>../icons/诊断报告.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(240, 240, 240);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="frame_10">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>610</y>
+             <width>641</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#frame_10{
+	
+	height:5px;
+	background-color:rgb(16,18,31);
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>631</width>
+             <height>591</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="3,5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_5" stretch="2,2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_8">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>10</y>
+                   <width>191</width>
+                   <height>271</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_3">
+                    <item>
+                     <widget class="QLabel" name="label_4">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	font-family:&quot;微软雅黑&quot;;
+	font-size:16px;
+	font-weight:bold;
+	
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>类别数量:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QSpinBox" name="spinBox_2">
+                      <property name="styleSheet">
+                       <string notr="true">QSpinBox {
+	
+
+	
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+	height:30px;
+	width:10px;
+}
+
+QSpinBox:hover {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+QSpinBox::up-button {
+    border: 0px;
+}
+
+QSpinBox::down-button {
+    border: 0px;
+}
+
+
+QSpinBox::up-arrow{
+    width: 10px;
+    height: 10px;
+    image: url(:/新前缀/up_arrow.png);
+}
+QSpinBox::down-arrow {
+	width: 10px;
+    height: 10px;
+    image: url(:/新前缀/down_arrow.png);
+}</string>
+                      </property>
+                      <property name="value">
+                       <number>2</number>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <widget class="QLabel" name="label_8">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	font-family:&quot;微软雅黑&quot;;
+	font-size:16px;
+	font-weight:bold;
+	
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>选择模型：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="comboBox_5">
+                      <property name="styleSheet">
+                       <string notr="true">QComboBox {
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+	height:30px;
+	width:10px;
+}
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox:hover {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+QComboBox::down-arrow {
+	width: 10px;
+    height: 10px;
+    image: url(:/新前缀/down_arrow.png);
+}
+</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>UNet</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>VNet</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>U2Net</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="cb_wwwc">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+	height:40px;
+}
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox:hover {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+QComboBox::down-arrow {
+	width: 10px;
+    height: 10px;
+    image: url(:/新前缀/down_arrow.png);
+}
+</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>纵隔窗</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>肺窗</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>软组织窗</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>脑窗</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>骨窗</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,2,4">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="label_9">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	font-family:&quot;微软雅黑&quot;;
+	font-size:16px;
+	font-weight:bold;
+	
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>窗宽：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="line_ww">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+	height:30px;
+}</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="slider_ww">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,2,4">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="label_10">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	font-family:&quot;微软雅黑&quot;;
+	font-size:16px;
+	font-weight:bold;
+	
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>窗位：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="line_wc">
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+	height:30px;
+}</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="slider_wc">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_9">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>30</y>
+                   <width>201</width>
+                   <height>261</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,3">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="label_11">
+                    <property name="styleSheet">
+                     <string notr="true">QLabel{
+	font-family:&quot;微软雅黑&quot;;
+	font-size:16px;
+	font-weight:bold;
+	
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>病灶位置：</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,3,1">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <spacer name="horizontalSpacer_3">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QListWidget" name="listWidget">
+                      <property name="styleSheet">
+                       <string notr="true">QListWidget {
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+	height:40px;
+}</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_4">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QLabel" name="text_loadModel">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>0</y>
+                   <width>191</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	font-family:&quot;微软雅黑&quot;;
+	font-size:16px;
+	font-weight:bold;
+	color:red;
+	
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLabel" name="canvas">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+	height:40px;
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_6">
+          <property name="styleSheet">
+           <string notr="true">#frame_6{
+	border-bottom-right-radius:22px;
+	
+	/*background-color:rgb(32,33,35);*/
+	background-color:rgb(16,18,31);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="frame_11">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>5</y>
+             <width>261</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(38,45,75);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>91</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_3{
+	font-size:16px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>诊断步骤</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>50</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:15px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:white;
+}</string>
+           </property>
+           <property name="text">
+            <string>步骤一</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>140</y>
+             <width>211</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:13px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+
+	color:rgb(206, 206, 206);
+}</string>
+           </property>
+           <property name="text">
+            <string>点击[加载模型]</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>110</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:15px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:white;
+}</string>
+           </property>
+           <property name="text">
+            <string>步骤二</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:15px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:white;
+}</string>
+           </property>
+           <property name="text">
+            <string>步骤三</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>230</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:15px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:white;
+}</string>
+           </property>
+           <property name="text">
+            <string>步骤四</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>260</y>
+             <width>211</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:13px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+
+	color:rgb(206, 206, 206);
+}</string>
+           </property>
+           <property name="text">
+            <string>点击[开始推理]即可开始诊断</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>290</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:15px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:white;
+}</string>
+           </property>
+           <property name="text">
+            <string>步骤五</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_20">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>320</y>
+             <width>211</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:13px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+
+	color:rgb(206, 206, 206);
+}</string>
+           </property>
+           <property name="text">
+            <string>点击[诊断报告]填写患者信息并导
+出诊断报告</string>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame_12">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>49</y>
+             <width>41</width>
+             <height>241</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_22">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>21</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../icons/流程图1.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_21">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>41</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../icons/流程图2.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_23">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>60</y>
+              <width>21</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../icons/流程图1.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_24">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>41</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="toolTipDuration">
+            <number>-8</number>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/流程图2.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>170</y>
+             <width>21</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/流程图1.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>170</y>
+             <width>41</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/流程图2.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>230</y>
+             <width>21</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/流程图1.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_28">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>220</y>
+             <width>41</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">、</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/流程图2.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_29">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>290</y>
+             <width>21</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/流程图1.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>80</y>
+             <width>211</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:13px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+
+	color:rgb(206, 206, 206);
+}</string>
+           </property>
+           <property name="text">
+            <string>选择分类任务类别数量和模型种类</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_32">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>200</y>
+             <width>211</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:13px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+
+	color:rgb(206, 206, 206);
+}</string>
+           </property>
+           <property name="text">
+            <string>点击[选择影像],选择要推理的CT图</string>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame_13">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>380</y>
+             <width>261</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(38,45,75);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_14">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>91</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#label_14{
+	font-size:16px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>注意事项</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>420</y>
+             <width>211</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	font-size:13px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+
+	color:rgb(206, 206, 206);
+}</string>
+           </property>
+           <property name="text">
+            <string>诊断时必须先选择模型种类和类别
+任务，否则系统无法判断模型是否
+对应，模型会加载失败</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../icons/three.qrc"/>
+ </resources>
+ <connections/>
+</ui>

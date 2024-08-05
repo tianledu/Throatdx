@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1051</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/白色图标/订单.png</normaloff>icon/白色图标/订单.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color:transparent;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1022</width>
+      <height>670</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1022</width>
+      <height>670</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget{
+	background-color:rgb(17,17,19);
+	border-radius:22px;
+}</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="styleSheet">
+        <string notr="true">#frame_2{
+	background-color: rgb(16, 18, 31);
+	border-radius:22px;
+	
+}
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1021</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#frame{
+	border-top-left-radius:22px;
+	border-top-right-radius:22px;
+	background-color:rgb(38,43,75);
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QTabWidget" name="tabWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>830</x>
+           <y>10</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabBar::tab {
+    font-size: 15px;
+    margin-right: 3px;
+	width: 80px;
+    height: 30px;
+	color:rgb(255, 255, 255);
+	font-family:&quot;微软雅黑&quot; ;
+	font-weight:bold;
+}
+
+QTabWidget::pane {
+    border: none;
+}
+
+QTabBar::tab {
+    border-bottom: 2px solid transparent;
+    padding: 4px;
+}
+
+QTabBar::tab:selected {
+    border-color: #0072C6;
+}
+
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>登录</string>
+          </attribute>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>-20</y>
+           <width>81</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../icons/logo.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="geometry">
+          <rect>
+           <x>930</x>
+           <y>10</y>
+           <width>75</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	color:white;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+	background-color:transparent;
+	font-size:15px;
+}
+QPushButton:hover {
+background-color: rgba(211, 211, 211, 50%);
+border-radius: 5px;
+}
+QPushButton:pressed {
+
+border-width: 1px;
+padding-top: 4px;
+padding-left: 4px;
+}</string>
+         </property>
+         <property name="text">
+          <string>退出</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../icons/按钮_关闭.png</normaloff>../icons/按钮_关闭.png</iconset>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_3">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>160</y>
+          <width>261</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#frame_3{
+	border-radius:22px;
+	background-color:rgb(28,34,56);
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,8">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_4">
+           <property name="styleSheet">
+            <string notr="true">#frame_4{
+	border-top-left-radius:22px;
+	border-top-right-radius:22px;	
+	background-color:rgb(38,43,75);
+	
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>51</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font-size: 16px;
+	font-family: &quot;微软雅黑&quot;;
+	font-weight: bold;
+	color:white;
+}</string>
+            </property>
+            <property name="text">
+             <string>登录</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_5">
+           <property name="styleSheet">
+            <string notr="true">#frame_5{
+	border-bottom-left-radius:22px;
+	border-bottom-right-radius:22px;	
+	background-color: rgb(28,34,56);
+	
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>261</width>
+              <height>281</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTabBar::tab {
+    font-size:16px;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    margin-right:10px;
+	margin-left:10px;
+	width: 40px;
+    height: 40px;
+	color:rgb(255, 255, 255);
+	
+}
+QTabWidget::pane {
+    border: none;
+}
+QTabBar::tab {
+    border-bottom: 4px solid transparent;
+    padding-right: 8px;
+	margin-right: 10px;
+}
+QTabBar::tab:selected {
+    border-color: #0072C6;
+	color: rgb(0, 170, 255);
+}
+QTabWidget::tab-bar {
+    alignment: center;
+}
+</string>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>登录</string>
+             </attribute>
+             <widget class="QFrame" name="frame_6">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>0</y>
+                <width>171</width>
+                <height>211</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>1</x>
+                 <y>11</y>
+                 <width>171</width>
+                 <height>191</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,1,0,1,1">
+                <item>
+                 <widget class="QLineEdit" name="username1">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+	color: rgb(206, 206, 206);
+    height: 30px;
+    border: 2px solid  #808080;
+	background-color:transparent;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请输入姓名</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="password1">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+	color: rgb(206, 206, 206);
+    height: 30px;
+    border: 2px solid  #808080;
+	background-color:transparent;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="echoMode">
+                   <enum>QLineEdit::Password</enum>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请输入工号/ID号</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,1">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QRadioButton" name="radioButton_2">
+                    <property name="styleSheet">
+                     <string notr="true">font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+color: rgb(206, 206, 206);</string>
+                    </property>
+                    <property name="text">
+                     <string>医生</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="radioButton">
+                    <property name="styleSheet">
+                     <string notr="true">font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+color: rgb(206, 206, 206);</string>
+                    </property>
+                    <property name="text">
+                     <string>患者</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout">
+                  <item>
+                   <spacer name="horizontalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+background-color:transparent;
+font-size:12px;
+font-family:&quot;微软雅黑&quot;;
+color:rgb(255,255, 255);
+font-weight:bold;
+}
+QPushButton:hover {
+background-color:transparent;
+color:rgb(0, 170, 255);
+transition: all 0.2s ease-in-out;
+}
+
+QPushButton:pressed {
+font-size: 10px;
+transition: all 0.2s ease-in-out;
+}
+
+
+
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>登录遇到问题？</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_8">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <widget class="QPushButton" name="login_button">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>169</width>
+                     <height>28</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">
+QPushButton:pressed {
+    border: 2px solid #333333;
+    background-color: #BDBDBD; 
+	border-radius:12px
+}
+QPushButton{
+	height:20px;
+	
+	
+	color: rgb(57, 57, 57);
+	font-size:16px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>登录</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>注册</string>
+             </attribute>
+             <widget class="QFrame" name="frame_7">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>-20</y>
+                <width>171</width>
+                <height>241</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QWidget" name="layoutWidget_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>171</width>
+                 <height>210</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_4">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+	color: rgb(206, 206, 206);
+    height: 30px;
+    border: 2px solid  #808080;
+	background-color:transparent;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请输入姓名</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_5">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+	color: rgb(206, 206, 206);
+    height: 30px;
+    border: 2px solid  #808080;
+	background-color:transparent;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+}</string>
+                  </property>
+                  <property name="echoMode">
+                   <enum>QLineEdit::Password</enum>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请输入工号/ID号</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_6">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+	color: rgb(206, 206, 206);
+    height: 30px;
+    border: 2px solid  #808080;
+	background-color:transparent;
+	font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+}</string>
+                  </property>
+                  <property name="echoMode">
+                   <enum>QLineEdit::Password</enum>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请确认工号/ID号</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,1">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QRadioButton" name="radioButton_3">
+                    <property name="styleSheet">
+                     <string notr="true">font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+color: rgb(206, 206, 206);</string>
+                    </property>
+                    <property name="text">
+                     <string>医生</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QRadioButton" name="radioButton_4">
+                    <property name="styleSheet">
+                     <string notr="true">font-weight:bold;
+	font-family:&quot;微软雅黑&quot;;
+    font-size: 12px;
+color: rgb(206, 206, 206);</string>
+                    </property>
+                    <property name="text">
+                     <string>患者</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <spacer name="horizontalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_4">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+background-color:transparent;
+font-size:12px;
+font-family:&quot;微软雅黑&quot;;
+	color: rgb(213, 213, 213);
+font-weight:bold;
+}
+QPushButton:hover {
+background-color:transparent;
+color:rgb(0, 170, 255);
+transition: all 0.2s ease-in-out;
+}
+
+QPushButton:pressed {
+font-size: 10px;
+transition: all 0.2s ease-in-out;
+}
+
+
+
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>注册遇到问题？</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_5">
+                  <property name="styleSheet">
+                   <string notr="true">
+QPushButton:pressed {
+    border: 2px solid #333333;
+    background-color: #BDBDBD; 
+	border-radius:12px
+}
+QPushButton{
+	height:20px;
+	
+	
+	color: rgb(57, 57, 57);
+	font-size:16px;
+	font-family:&quot;微软雅黑&quot;;
+	font-weight:bold;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>注册</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
